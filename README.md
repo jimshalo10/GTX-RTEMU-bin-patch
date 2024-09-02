@@ -1,16 +1,24 @@
 # GTX-RTEMU-bin-patch 5.4.3
 
-Click the Green button above select "Download Zip" to get a zipped format and restore to 
+Click the Green button above select "Download Zip" to get a zipped format and restore to C:\Program Files\Epic Games\UE_5.4
 
-Engine\Binaries\Win64\UnrealEditor-D3D12RHI.dll overwrite
+C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\Win64\UnrealEditor-D3D12RHI.dll overwrite
 
-The patched control file is in this package Engine\Config\Console.ini
+The patched control file is in this package 
+
+C:\Program Files\Epic Games\UE_5.4Engine\Config\Console.ini
 
 Make sure you have changed the contol files as described in the Epic Forum Thread correctly
 
 Solved : Cant Enable RayTracing in UE5 (gtx 1060)(Nvidia Pascal)
 
 at [Epic Forum page](https://forums.unrealengine.com/t/solved-cant-enable-raytracing-in-ue5-gtx-1060-nvidia-pascal/231479/127)
+
+
+LEGAL STUFF
+If you use this patch there is NO WARRANTY NO SUPPORT and NO LIABILITY BY EPIC AND ANY OTHER PARTIES
+Your installation of 5.4 binary will not be production
+
 
 The first change was to add the ability to use the variable DXR_ALLOW_EMULATED_RAYTRACING in the WindowsD3D12Device.cpp file.
 I’m not making games and just using the path tracer to make images, so i set this to be on by default so i wouldn’t have to edit anything in the ConsoleVariables.ini file. After compiling it (thankfully it took only a few seconds to compile) Unreal ran, but i wasn’t getting any ray tracing. Checking the Output Log, and searching for ‘D3d12’ i saw :
