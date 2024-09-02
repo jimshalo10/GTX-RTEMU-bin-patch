@@ -1,12 +1,12 @@
 # GTX-RTEMU-bin-patch 5.4.3
 
-Click the Green button above select "Download Zip" to get a zipped format and restore to C:\Program Files\Epic Games\UE_5.4
+Click the Green button above scroll to bottom select "Download Zip" to get a zipped format and restore to C:\Program Files\Epic Games\UE_5.4
 
 C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\Win64\UnrealEditor-D3D12RHI.dll overwrite
 
 The patched control file is in this package 
 
-C:\Program Files\Epic Games\UE_5.4Engine\Config\Console.ini
+C:\Program Files\Epic Games\UE_5.4Engine\Config\Console.ini overrwrite
 
 Make sure you have changed the contol files as described in the Epic Forum Thread correctly
 
