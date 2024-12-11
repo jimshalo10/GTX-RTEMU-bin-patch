@@ -1,6 +1,6 @@
 # GTX-RTEMU-bin-patch 5.5.1
 
-#This patch is ONLY FOR NEW PROJECTS in 5.5.1 old projects 5.4 will crash due to over 1,200 pathces in Path tracer for 5.5
+#This patch is ONLY FOR NEW PROJECTS in 5.5.1 old projects 5.4 will crash due to over 1,200 patches in Path tracer for 5.5
 
 C:\Program Files\Epic Games\UE_5.5\Engine\Binaries\Win64\UnrealEditor-D3D12RHI.dll overwrite
 
