@@ -6,7 +6,7 @@ C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\Win64\UnrealEditor-D3D12RHI.d
 
 The patched control file is in this package 
 
-C:\Program Files\Epic Games\UE_5.4Engine\Config\ConsoleVariables.ini overwrite
+C:\Program Files\Epic Games\UE_5.4\Engine\Config\ConsoleVariables.ini overwrite
 
 Make sure you have changed the contol files as described in the Epic Forum Thread correctly
 
