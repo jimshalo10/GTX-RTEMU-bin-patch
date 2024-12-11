@@ -59,3 +59,21 @@ UE_LOG(LogD3D12RHI, Log, TEXT("Ray tracing emulation is now enabled. Use at own 
 GRHISupportsRayTracing = RHISupportsRayTracing(GMaxRHIShaderPlatform);
 GRHISupportsRayTracingShaders = GRHISupportsRayTracing && RHISupportsRayTracingShaders(GMaxRHIShaderPlatform);
 ```
+
+For version 5.5.1 the followng patch is needed as there will be a UE5 crash
+```
+Thanks. I’ve tested it and it doesn’t work for me at all. UE crashes with error saying:
+
+Assertion failed: GRHIGlobals.RayTracing.SupportsDispatchIndirect [File:C:\Users\Owner\source\repos\ue5Lgpu551\Engine\Source\Runtime\D3D12RHI\Private\D3D12RayTracing.cpp] [Line: 4977] 
+RHIRayTraceDispatchIndirect may not be used because DXR 1.1 is not supported on this machine.
+```
+
+The fix to this is comment out the failing line to stop checking of Tier 1.1 
+
+…\UnrealEngine\Engine\Source\Runtime\D3D12RHI\Private\D3D12RayTracing.cpp at about line 4977
+
+```
+	//@GTXEMU Remove teir 1.1 crash
+	//checkf(GRHISupportsRayTracingDispatchIndirect, TEXT("RHIRayTraceDispatchIndirect may not be used because DXR 1.1 is not supported on this machine."));
+```
+
